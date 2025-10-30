@@ -15,7 +15,7 @@ export default function Header() {
     { name: 'Electronics', href: '/category/electronics' },
     { name: 'Home & Kitchen', href: '/category/home-kitchen' },
     { name: 'Power Supplies', href: '/category/power-supplies' },
-    { name: 'Furniture', href: '/category/furniture' },
+
     { name: 'Other Categories', href: '/category/other' },
   ];
 
