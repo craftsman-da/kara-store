@@ -48,16 +48,19 @@ export default function ProductCard({
         </h3>
 
         {/* Price + Button Wrapper */}
-        <div className='bg-[#FFDDD9] rounded-2xl px-3 py-2 flex items-center justify-between'>
+        <div className='bg-[#FFDDD9] rounded-2xl px-3 py-2 flex flex-col sm:flex-row items-center justify-between gap-2'>
+          {/* Price */}
           <span
             className={`text-[#FFA500] font-semibold ${
-              isSmall ? 'text-sm' : 'text-base'
+              isSmall ? 'text-xs sm:text-sm' : 'text-sm sm:text-base'
             }`}
           >
             {formatPrice(product.price)}
           </span>
+
+          {/* Buy Button */}
           <button
-            className='bg-[#990000] text-white px-4 py-1.5 rounded-xl font-semibold text-sm hover:bg-[#7A0000] transition-colors'
+            className='bg-[#990000] text-white px-4 py-1.5 rounded-xl font-semibold text-xs sm:text-sm hover:bg-[#7A0000] transition-colors'
             aria-label={`Buy ${product.name}`}
           >
             Buy Now

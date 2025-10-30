@@ -28,17 +28,18 @@ export default function CategoryCard({ category }: CategoryCardProps) {
       </div>
 
       {/* Details Area */}
-      <div className='bg-[#F2F2F2] rounded-b-2xl  py-4 px-3 space-y-2'>
+      <div className='bg-[#F2F2F2] rounded-b-2xl py-4 px-3 space-y-2'>
+        {/* Category Title */}
         <h3 className='text-[#990000] font-semibold text-base md:text-lg'>
           {category.name}
         </h3>
 
-        {/* Wrapper for price text + button */}
-        <div className='bg-[#FFDDD9] rounded-2xl py-2 px-3 flex  justify-between items-center space-y-2'>
-          <p className='text-[#FFA500] text-sm font-medium'>
+        {/* Price + Button Wrapper */}
+        <div className='bg-[#FFDDD9] rounded-2xl py-2 px-3 flex flex-col sm:flex-row justify-between items-center gap-2'>
+          <p className='text-[#FFA500] font-medium text-xs sm:text-sm'>
             Attached with price
           </p>
-          <button className='bg-[#990000] text-white px-4 py-1.5 rounded-xl text-sm font-semibold hover:bg-[#7A0000] transition-colors'>
+          <button className='bg-[#990000] text-white px-4 py-1.5 rounded-xl font-semibold text-xs sm:text-sm hover:bg-[#7A0000] transition-colors'>
             View more
           </button>
         </div>
